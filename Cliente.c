@@ -60,7 +60,7 @@ int main(int argc, const char * argv[])
     
     // Cerrar sockets
     close(cliente);
-    
+    free(wind); 
     return 0;
 }
 double * leerViento(){
@@ -77,5 +77,6 @@ double * leerViento(){
         usleep(50);
     }
     //num = &i;
+    free(arrayViento);
     return arrayViento;
 }

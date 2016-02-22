@@ -99,6 +99,6 @@ int main(int argc, const char * argv[]) {
     }
     
     
-    
+    free(windSrv);    
     return 0;
 }
